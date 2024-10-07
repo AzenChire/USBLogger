@@ -1,0 +1,13 @@
+Vérifier si le service est actif : 
+- sc query winmgmt
+
+Redémarrer le service WMI :
+- net stop winmgmt
+- net start winmgmt
+
+Réparer le service WMI :
+- winmgmt /salvagerepository
+- winmgmt /resetrepository
+
+Analyser et réparer les fichiers système :
+- sfc /scannow
